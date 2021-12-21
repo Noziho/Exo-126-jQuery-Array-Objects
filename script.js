@@ -47,3 +47,11 @@ $('#next').click(function () {
     }
 })
 
+function list () {
+    $(arrObj).each(function (index, elem) {
+        $('#container2page').append(arrObj[index].person + " " + arrObj[index].age + " ans" +`<img src="${arrObj[index].avatar}" alt='avatar'` + "<br>");
+    })
+}
+
+list();
+
